@@ -2,8 +2,9 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan, Image
-from ..core.navigation_controller import NavigationController
-from ..models.yolo_detector import YoloDetector
+import cv2
+import cv2
+
 from ..config.parameters import RobotConfig
 from ..core.state_machine import StateMachine, RobotState
 from ..utils.image_processor import ImageProcessor
@@ -162,3 +163,6 @@ def main(args=None):
     
     controller.destroy_node()
     rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
