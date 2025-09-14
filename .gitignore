@@ -1,6 +1,7 @@
 build/
 install/
 log/
+src/simple-slam-test/models/
 .colcon_install_layout
 .colcon_build_lock
 CMakeCache.txt
@@ -30,3 +31,4 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+yolo/
